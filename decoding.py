@@ -27,7 +27,6 @@ image_dimension_crop = abs(bottomright - topleft + 1)
 total_image_pixel_crop = np.array((image_dimension_crop))
 print(H)
 
-"""
 
 #reshaping the images so that the cropped image encompasses correctly the hadamard code that is projected
 filepath=glob.glob('car_pos_img/*.png')
@@ -46,7 +45,7 @@ for f in filepath:
     x = x[352:780,565:992]
     cv2.imwrite(f,x)
 
-"""
+
 #Reshaping each channel of the captured image which is of size(m,n,3) to a vector of size (mn,1)
 lpos1 = []
 lpos2 = []
